@@ -1,0 +1,31 @@
+App.js
+This is the main component of the application.
+It maintains the list of tasks using the useState hook.
+It renders the TaskList component passing tasks state and addTask function as props.
+
+components/TaskList.js
+This component renders a form to add new tasks and a list of existing tasks.
+It also maintains the state for task name, assigned to, task status, and error message.
+It has event handlers for input changes and form submission.
+When the form is submitted, it creates a new task object, adds it to the tasks array, and resets the form fields.
+
+components/TaskForm.js
+This component is responsible for rendering the form to add a new task.
+It receives input values and event handlers as props and renders input fields for task name, assigned to, and task status.
+It also renders a submit button and displays an error message if the form submission fails.
+
+components/TaskItem.js
+This component represents an individual task item.
+It receives a task object as a prop and renders task name, assigned to, and task status.
+
+CSS Files
+
+App.css: Contains basic styling for the entire application.
+TaskList.css: Contains styling for the task list component.
+TaskForm.css: Contains styling for the task form component.
+TaskItem.css: Contains styling for the individual task item component.
+Explanation
+The application allows users to add tasks with a name, assignee, and status.
+The tasks are displayed as a list, and each task has its name, assignee, and status shown.
+The form provides validation for task name and assignee. If any of these fields are empty, it shows an error message.
+Overall, this application provides a simple interface for managing tasks.
